@@ -1,0 +1,75 @@
+
+#page2{
+    display: none;
+}
+
+.page2-grid{
+    display: grid;
+    grid-template-columns: auto; 
+    padding: 10px;
+}
+
+#selectedGuitarImage{
+    margin-top: 10px;
+    margin-left: 20%;
+    height: 250px;
+    object-fit: contain; 
+    
+}
+#confirmBox{
+    display: none;
+}
+#selectedGuitarDescription{
+    margin-top: 7%;
+    text-align: justify;
+    font-style: italic;
+    
+}
+
+#page2-part-2 form{
+    margin-left: 2%;
+    margin-top: 20%;
+}
+#selectedGuitarPrice{
+    color: green;
+    font-size: 25px;
+}
+
+#page2-part-3{
+    display: none;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+#customerDetails label{
+    padding: 10px;
+}
+#verifyButton{
+margin-left: 40%;
+}
+#gImageDisplay{
+height: 300px;
+}
+@media(min-width: 600px) {
+    .page2-grid{
+        display: grid;
+        grid-template-columns: 450px auto; 
+    }
+    #customerDetails{
+        margin-left: 180px;
+        margin-top: 40px;
+    }
+    #selectedGuitarDescription{
+        margin-top: 7%;
+        width: 80%;
+        font-style: italic;
+    }
+    #page2-part-2 form{
+        margin-left: 8%;
+        margin-top: 20%;
+    }
+    #page2-part-3{
+        display: none;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+}

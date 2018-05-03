@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="page2.css">
+    <link rel="stylesheet" href="page3.css">
+    <!-- font awsome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <title>Guitar Center</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(to right, #ffffff, #41cbee);">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="">Acousticals</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a id="guitars" class="nav-link" href="#guitarGrid">Guitar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Bass</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Drums</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Keyboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">DJ & Lighting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Used Gear</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Clearance</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <img id="mainImg" src="main4.jpg">
+    <!-- main section -->
+    <div id="guitarGrid" class="grid-model">
+        <div class="part-1">
+            <div class="image-section">
+                <img id="gImages" src="product1.jpg">
+                <br>
+                <button class="btn btn-dark" id="prev-btn">Previous</button>
+                <button class="btn btn-primary" id="next-btn">Next</button>
+            </div>
+        </div>
+        <div class="part-2">
+
+            <div id="man-info" class="text-left">
+                <div>
+                    <strong>Price : </strong>
+                    <span id="prodPrice"></span>
+
+                </div>
+
+                <div>
+                    <strong>
+                        InStock:
+                        <span id="prodQuant"></span>
+                    </strong>
+                </div>
+                <div id="prodAvailable">Available</div>
+                <button class="btn btn-info" id="info-btn">
+                    <i class="fa fa-info-circle"></i> Product Info</button>
+                <br>
+
+                <div id="infoDiv" class="text-justify">
+                    <div>
+                        <span id="productDesc"></span>
+                    </div>
+
+                </div>
+                <button class="btn btn-info" id="ship-btn">
+                    <i class="fa fa-crosshairs"></i> Shipping Info</button>
+                <br>
+                <div id="shipDiv" class="text-justify">
+                    <div>
+                        <p id="shipInfo"></p>
+                    </div>
+                </div>
+                <button class="btn btn-info" id="rev-btn">
+                    <i class="fa fa-comment"></i> Customer Reviews</button>
+                <div id="revDiv" class="text-justify">
+                    <div>
+                        <p id="custRev"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- buy button -->
+        <div class="row">
+            <div class="col buy-section">
+                <a class="btn btn-success buy-button" id="buy-it" href="#page2">
+                    <i class="fa fa-shopping-cart"></i> Buy</a>
+            </div>
+        </div>
+
+    </div>
+    <div id="page2" class="page2-grid">
+        <div id="page2-part-1">
+            <img src="" id="selectedGuitarImage">
+        </div>
+        <div id="page2-part-2">
+            <p id="selectedGuitarDescription"></p>
+            <strong>Price : </strong>
+            <span id="selectedGuitarPrice"></span>
+        </div>
+        <div id="page2-part-2">
+            <form name="myForm">
+                <div class="form-group">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Firstname</span>
+                        </div>
+                        <input type="text" class="form-control" name="firstnameField" placeholder="e.g. Tony" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Lastname</span>
+                        </div>
+                        <input type="text" class="form-control" name="lastnameField" placeholder="e.g. Stark" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Email</span>
+                        </div>
+                        <input type="email" class="form-control" name="emailField" placeholder="e.g. abc@xyz.com" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Credit Card No.</span>
+                        </div>
+                        <input type="number" class="form-control" name="ccField" placeholder="e.g. 2222-3333-4444-9999" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Mobile No.</span>
+                        </div>
+                        <input type="tel" class="form-control" name="phoneField" placeholder="e.g. 897-674-8975" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <input type="button" class="btn btn-primary" id="infoRevBtn" value="Review Info.">
+                </div>
+            </form>
+        </div>
+        <div id="page2-part-3">
+            <div id="customerDetails">
+                <label>Firstname: </label>
+                <strong>
+                    <span id="fnameDisplay"></span>
+                </strong>
+                <br>
+                <label>Lastname: </label>
+                <strong>
+                    <span id="lnameDisplay"></span>
+                </strong>
+                <br>
+                <label>Email: </label>
+                <strong>
+                    <span id="emailDisplay"></span>
+                </strong>
+                <br>
+                <label>Credit Card No: </label>
+                <strong>
+                    <span id="ccDisplay"></span>
+                </strong>
+                <br>
+                <label>Phone No: </label>
+                <strong>
+                    <span id="phoneDisplay"></span>
+                </strong>
+                <br>
+                <button class="btn btn-primary" id="verifyButton">Verify and Proceed..</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-3">
+        <img id="gImageDisplay" src=""></img>
+        <p id="gDescDisplay"></p>
+        <h1><em>Order Confirmation:</em></h1><br>
+        <div id="confirmBox">
+                <p>Order No : <strong><span id="orderNoDisplay"></span></strong></p>
+                <p>Firstname: <strong><span id="firstNameDisplay"></span></strong></p>
+                <p>Credit Card Number: <strong><span id="ccNoDisplay"></span></strong></p>
+                <p>Lastname: <strong><span id="lastNameDisplay"></span></strong></p>
+                <p>Total Amount: <strong><span id="totalAmountDisplay"></span></strong></p>
+                <p>Email Address: <strong><span id="myEmailDisplay"></span></strong></p>
+                <p>Contact Number: <strong><span id="phoneNoDisplay"></span></strong></p>
+        </div>
+        <a href="" class="btn btn-danger" onclick="checkout()">Checkout & Go Home</a>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="page2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

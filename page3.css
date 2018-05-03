@@ -1,0 +1,39 @@
+#page-3{
+padding: 10px;
+display: none;
+grid-template-columns: 300px;
+text-align: justify;
+}
+
+#page-3 h1{
+    font-size: 30px;
+}
+
+#gImageDisplay{
+    margin-left: 20%;
+}
+
+#confirmBox{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 300px;
+    
+}
+@media(min-width: 600px) {
+    #page-3{
+        padding: 30px;
+        display: grid;
+        display: none;
+        grid-template-columns: 1200px;
+        margin-left: 10%;
+        }
+        #gImageDisplay{
+            margin-left: 30%;
+        }
+        #confirmBox{
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            
+        }
+}

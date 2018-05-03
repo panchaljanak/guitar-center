@@ -1,0 +1,118 @@
+#gImages{
+    width: 200px; 
+    height: 300px;
+    margin-left: 10%;
+    object-fit: contain;
+}
+.grid-model{
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+}
+#guitarGrid{
+    display: none;
+    width: 95%;
+}
+.part-1{
+    margin: 10px;
+}
+.part-2{
+    margin: 10px;
+    background: linear-gradient(to left, #ece9e6, #ffffff);
+    padding: 10px;
+}
+#confirmBox{
+    display: none;   
+}
+#mainImg{
+    margin-top: 60%;
+    width: 90%;
+    height: 1000%;
+    margin-left: 5%;
+}
+li{
+    margin-left: 95px;
+}
+#prodAvailable{
+    color: green;
+}
+#prodPrice{
+    color: green;
+    font-size: 25px;
+}
+.buy-button{
+    font-size: 20px;
+    padding: 15px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 40%; 
+}
+#prodQuant{
+    color: green;
+    font-size: 15px;
+}
+#info-btn, #ship-btn, #rev-btn{
+    margin-top: 10px; 
+}
+.image-section{
+    margin-top: 20px;
+    margin-left: 5%;
+    padding: 20px;
+    height: 400px;;
+}
+#next-btn{
+    margin-left: 30%;
+}
+
+.btn-info-group button{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#infoDiv, #shipDiv, #revDiv{
+    display: none;
+    width: 95%;
+    margin-top: 10px;
+}
+
+@media(min-width: 600px) {
+    #guitarGrid{
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #mainImg{
+        margin-top: 5%;
+        width: 90%;
+        height: 90%;
+        margin-left: 5%;
+    }
+    #gImages{
+        margin-top: 10px;
+        width: 300px; 
+        height: 450px;
+        padding: 10px;
+        object-fit: contain;
+    }
+    .grid-model{
+        display: grid;
+        grid-template-columns: 450px auto;
+    }
+    #next-btn{
+        margin-left: 48%;
+    }
+    .image-section{
+        margin-top: 20px;
+        padding: 20px;
+        height: 600px;;
+    }
+    .buy-button{
+        font-size: 30px;
+        padding: 15px;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 130%; 
+    }
+}
